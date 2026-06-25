@@ -12,7 +12,7 @@ pipeline {
     environment {
         // ----- EDIT THESE -----
         AWS_REGION  = 'us-east-1'          // your region
-        ECR_ACCOUNT = '123456789012'       // your 12-digit AWS account id
+        ECR_ACCOUNT = '664267705879'       // your 12-digit AWS account id
         ECR_REPO    = 'cicd-project-3'     // the ECR repository (reused from Project 3)
         EKS_CLUSTER = 'cicd-cluster'       // your EKS cluster name
         // ----------------------
