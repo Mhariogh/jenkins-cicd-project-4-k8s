@@ -11,8 +11,7 @@ On an ARM machine, replace `amd64` with `arm64` in the Linux URL.
 Windows (winget or Chocolatey):
 
 ```powershell
-winget install -e --id Kubernetes.minikube
-# or: choco install minikube -y
+ # or: choco install minikube -y
 ```
 
 Linux:
