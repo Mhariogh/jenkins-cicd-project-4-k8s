@@ -121,7 +121,7 @@ Look at the `EXTERNAL-IP` column. It is a load balancer hostname and takes two o
 ## Understanding the Deploy stage
 
 ```groovy
-aws eks update-kubeconfig --region ${AWS_REGION} --name ${EKS_CLUSTER}
+aws eks update-kubeconfig --region us-east-1 --name cicd-cluster
 sed "s|IMAGE_PLACEHOLDER|${IMAGE}:${IMAGE_TAG}|g" k8s/deployment.yaml | kubectl apply -f -
 kubectl apply -f k8s/service.yaml
 kubectl rollout status deployment/cicd-app --timeout=180s

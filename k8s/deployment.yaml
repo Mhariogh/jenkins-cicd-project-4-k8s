@@ -18,7 +18,7 @@ spec:
         - name: cicd-app
           # The pipeline replaces IMAGE_PLACEHOLDER with the ECR image and tag
           # it just built, so each deploy runs the exact image from this build.
-          image: IMAGE_PLACEHOLDER
+          image: 664267705879.dkr.ecr.us-east-1.amazonaws.com/cicd-project-3:5:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
